@@ -89,10 +89,10 @@
 				<is_open_after_saved>true</is_open_after_saved>
 			</export_html_setting>
 			<export_image_setting>
-				<output_file_path></output_file_path>
+				<output_file_path>EployeeERD.png</output_file_path>
 				<category_dir_path></category_dir_path>
 				<with_category_image>true</with_category_image>
-				<is_open_after_saved>true</is_open_after_saved>
+				<is_open_after_saved>false</is_open_after_saved>
 			</export_image_setting>
 			<export_java_setting>
 				<java_output></java_output>
@@ -135,7 +135,7 @@
 			</connections>
 			<display>false</display>
 			<creation_date>2017-07-02 19:57:08</creation_date>
-			<updated_date>2017-07-02 20:08:04</updated_date>
+			<updated_date>2017-07-02 20:18:47</updated_date>
 			<model_property>
 				<name>프로젝트명</name>
 				<value></value>
