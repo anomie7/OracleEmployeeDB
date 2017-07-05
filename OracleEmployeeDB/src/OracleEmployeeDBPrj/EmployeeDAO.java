@@ -123,6 +123,22 @@ public class EmployeeDAO {
 		
 		return null;
 	}
+
+	public void employeeUpdate(String sno, String name, String job, String sdpt, String email) {
+		String sql = "update employee set jobgrade = ?, department = ?, email = ? where no = ?, name = ?";
+		int no = Integer.parseInt(sno);
+		int dpt = Integer.parseInt(sdpt);
+		
+		try{
+			conn = DBConnect.getConnection();
+			psmt = conn.prepareStatement(sql);
+			
+			
+			psmt.executeUpdate();
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+	}
 	
 	
 	
