@@ -3,7 +3,7 @@ package OracleEmployeeDBPrj;
 public class EmployeeDTO {
 	private int no;
 	private String name;
-	private String job;
+	private String jobGrade;
 	private int department;
 	private String email;
 	
@@ -11,7 +11,7 @@ public class EmployeeDTO {
 		super();
 		this.no = no;
 		this.name = name;
-		this.job = job;
+		this.jobGrade = job;
 		this.department = department;
 		this.email = email;
 	}
@@ -32,12 +32,12 @@ public class EmployeeDTO {
 		this.name = name;
 	}
 
-	public String getJob() {
-		return job;
+	public String getjobGrade() {
+		return jobGrade;
 	}
 
-	public void setJob(String job) {
-		this.job = job;
+	public void setjobGrade(String job) {
+		this.jobGrade = job;
 	}
 
 	public int getDepartment() {

@@ -34,4 +34,21 @@
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3YVSYl8aEeeqnuJwjLMsjg" value="1"/>
     </ownedAttribute>
   </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zZoEUF8eEeeqnuJwjLMsjg" name="AddPane">
+    <ownedAttribute xmi:id="_hsllYF8fEeeqnuJwjLMsjg" name="la" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hsmMcF8fEeeqnuJwjLMsjg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hsmMcV8fEeeqnuJwjLMsjg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_h9vm0F8fEeeqnuJwjLMsjg" name="property2" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_h9vm0V8fEeeqnuJwjLMsjg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_h9wN4F8fEeeqnuJwjLMsjg" value="1"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_iM6rQF8fEeeqnuJwjLMsjg" name="property3" visibility="public">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iM6rQV8fEeeqnuJwjLMsjg"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iM7SUF8fEeeqnuJwjLMsjg" value="1"/>
+    </ownedAttribute>
+  </packagedElement>
 </uml:Model>
