@@ -124,23 +124,24 @@ public class EmployeeDAO {
 		return null;
 	}
 
-	public void employeeUpdate(String sno, String name, String job, String sdpt, String email) {
-		String sql = "update employee set jobgrade = ?, department = ?, email = ? where no = ?, name = ?";
+	public void employeeUpdate(String sno, String job, String sdpt, String email) {
+		String sql = "update employee set jobgrade = ?, department = ?, email = ? where no = ?";
 		int no = Integer.parseInt(sno);
 		int dpt = Integer.parseInt(sdpt);
 		
 		try{
 			conn = DBConnect.getConnection();
 			psmt = conn.prepareStatement(sql);
-			
-			
+			psmt.setString(1, job);
+			psmt.setInt(2, dpt);
+			psmt.setString(3, email);
+			psmt.setInt(4, no);
 			psmt.executeUpdate();
+			
+		}catch (SQLException e) {
+			System.out.println("예외발생: " + e.getMessage() );
 		}catch(Exception e){
-			System.out.println(e.getMessage());
+			System.out.println(e.getMessage() );
 		}
 	}
-	
-	
-	
-
 }

@@ -47,7 +47,6 @@ public class UpdatePane extends JPanel implements ActionListener{
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		String sno;
-		String name;
 		String job;
 		String sdpt;
 		String email;
@@ -55,13 +54,12 @@ public class UpdatePane extends JPanel implements ActionListener{
 		
 		if(btn.getText().equals(okb.getText())){
 			sno = tf[0].getText();
-			name = tf[1].getText();
 			job = tf[2].getText();
 			sdpt = tf[3].getText();
 			email = tf[4].getText();
 			
 			EmployeeDAO edao = new EmployeeDAO();
-			edao.employeeUpdate(sno, name, job, sdpt, email);
+			edao.employeeUpdate(sno, job, sdpt, email);
 		}
 	}
 	
