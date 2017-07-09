@@ -30,7 +30,7 @@ public class UpdatePane extends JPanel implements ActionListener{
 		}
 
 		jp[5] = new JPanel();
-		okb = new JButton("입력");
+		okb = new JButton("수정");
 		rsb = new JButton("다시쓰기");
 
 		jp[5].add(okb);
@@ -50,9 +50,9 @@ public class UpdatePane extends JPanel implements ActionListener{
 		String job;
 		String sdpt;
 		String email;
-		JButton btn = (JButton) e.getSource();
+		String myac = e.getActionCommand();
 		
-		if(btn.getText().equals(okb.getText())){
+		if(myac.equals(okb.getText())){
 			sno = tf[0].getText();
 			job = tf[2].getText();
 			sdpt = tf[3].getText();
@@ -60,6 +60,11 @@ public class UpdatePane extends JPanel implements ActionListener{
 			
 			EmployeeDAO edao = new EmployeeDAO();
 			edao.employeeUpdate(sno, job, sdpt, email);
+			
+		}else if(myac.equals(rsb.getText() ) ){
+			for(int i = 0; i < tf.length; i++){
+				tf[i].setText(" ");
+			}
 		}
 	}
 	

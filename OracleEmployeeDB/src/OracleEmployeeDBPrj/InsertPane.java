@@ -56,7 +56,7 @@ public class InsertPane extends JPanel implements ActionListener{
 			System.out.println("입력완료");
 		}else if(btn.getText().equals(rsb.getText())){
 			for(int i = 0; i <tf.length; i++){
-				tf[i].setText("");
+				tf[i].setText(" ");
 			}
 		}
 		

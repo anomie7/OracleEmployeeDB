@@ -77,7 +77,7 @@ public class SelectPane extends JPanel implements ActionListener {
 			}
 		}else if(btn.getText().equals(rsb.getText())){
 			for(int i = 0; i <tf.length; i++){
-				tf[i].setText("");
+				tf[i].setText(" ");
 			}
 		}
 		
