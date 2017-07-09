@@ -7,14 +7,14 @@ public class TestFrame extends JFrame{
 		setTitle("JDBC Oracle 사원 관리");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
-		setContentPane( new UpdatePane() );
+		setContentPane( new DeletePane() );
 		
 		setSize(500, 500);
 		setVisible(true);
 	}
 	
 	public static void main(String[] args){
-		new DeletePane();
+		new TestFrame();
 	}
 
 }

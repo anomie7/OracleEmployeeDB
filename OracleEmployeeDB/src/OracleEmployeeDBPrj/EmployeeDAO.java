@@ -144,4 +144,22 @@ public class EmployeeDAO {
 			System.out.println(e.getMessage() );
 		}
 	}
+
+	public void employeeDelete(String sno, String name) {
+		String sql = "delete from employee where no = ? and name = ?";
+		int no = Integer.parseInt(sno);
+		
+		try{
+			conn = DBConnect.getConnection();
+			psmt = conn.prepareStatement(sql);
+			psmt.setInt(1, no);
+			psmt.setString(2, name);
+			psmt.executeUpdate();
+			
+		}catch(SQLException e) {
+			System.out.println("예외발생: " + e.getMessage() );
+		}catch(Exception e){
+			System.out.println("예외발생: " + e.getMessage() );
+		}
+	}
 }

@@ -32,12 +32,39 @@ public class DeletePane extends JPanel implements ActionListener {
 		jp[2] = new JPanel();
 		okb = new JButton("삭제");
 		rsb = new JButton("다시쓰기");
+		
+		okb.addActionListener(this);
+		rsb.addActionListener(this);
+		
+		jp[2].add(okb);
+		jp[2].add(rsb);
+		add(jp[2]);
+		
+		
+		
+		setSize(300, 300);
+		setVisible(true);
 	}
 
 	
 	@Override
-	public void actionPerformed(ActionEvent arg0) {
+	public void actionPerformed(ActionEvent e) {
+		String sno;
+		String name;
+		String myac = e.getActionCommand();
 		
+		if(myac.equals(okb.getText()) ){
+			sno = tf[0].getText();
+			name = tf[1].getText();
+			
+			EmployeeDAO edao = new EmployeeDAO();
+			edao.employeeDelete(sno, name);
+			
+		}else if(myac.equals(rsb.getText() ) ){
+			for(int i = 0; i < tf.length; i++){
+				tf[i].setText(" ");
+			}
+		}
 	}
 	
 	
